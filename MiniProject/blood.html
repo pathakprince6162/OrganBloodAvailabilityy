@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Looking for Blood - Blood & Organ Availability</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1 class="logo">Blood & Organ Availability</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blood.html" class="active">Looking for Blood</a></li>
+                    <li><a href="organ.html">Looking for Organ</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <h2>Looking for Blood</h2>
+        <p>
+            Use this page to search for available blood donors or blood banks in your area.
+            (For the mini project demo this is a static page — you can expand later with a searchable database.)
+        </p>
+
+        <section class="card">
+            <h3>Sample Search (Demo)</h3>
+            <form id="blood-search-form" class="form-inline">
+                <label for="blood-group">Blood Group:</label>
+                <select id="blood-group" required>
+                    <option value="">Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+
+                <label for="city">City:</label>
+                <input id="city" type="text" placeholder="Enter city" required>
+
+                <button class="btn" type="submit">Search</button>
+            </form>
+
+            <div id="blood-search-results" class="results">
+                <!-- Demo results will appear here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year2"></span> Blood & Organ Availability Project</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
